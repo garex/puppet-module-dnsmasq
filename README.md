@@ -23,6 +23,8 @@ dnsmasq::address {
 }
 ```
 
+*Just call this define (-s) all other will be included magically.*
+
 ## GOODTODO
 
 * Add more features -- not only simple address translation

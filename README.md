@@ -16,16 +16,10 @@ You can add to each many names/aliases, that will be managed by dnsmasq, when DN
 Call this define by the number of your needed-to-name machines:
 
 ```ruby
-dnsmasq::address {"192.168.100.10":
-  names => ["ten.loc", "printer.loc", "cool.loc"]
-}
-
-dnsmasq::address {"192.168.100.20":
-  names => ["twenty.inn"]
-}
-
-dnsmasq::address {"192.168.100.30":
-  names => ["secret.bla"]
+dnsmasq::address {
+  "192.168.100.10": names => ["ten.loc", "printer.loc", "cool.loc"];
+  "192.168.100.20": names => ["twenty.inn"];
+  "192.168.100.30": names => ["secret.bla"];
 }
 ```
 
